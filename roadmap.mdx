@@ -1,0 +1,62 @@
+main app:
+e-commerce platform
+
+frontend:
+
+- simple style and view with commonly found pages and components
+
+backend:
+
+- User Authentication with jwt-go: Implement a secure JWT-based authentication system where users login and get a token they must then include in their headers for authenticated routes.
+
+- Real-time chat with gorilla/websocket: Develop a simple real-time chat where users can join and start messaging in real time.
+
+- Data storage with Gorm: Use Gorm to interact with your PostgreSQL database hosted on AWS RDS.
+
+- Caching with go-redis: Implement caching of frequent DB queries in Redis to enhance the performance of your application.
+
+- API development with Gin and gorilla/mux: Use these to develop robust, secure, and efficient APIs for your application's front-end and possibly other clients.
+
+- AWS interactions with aws-sdk-go: Use this to interact with AWS services such as S3, SES, or any other services you're using in your application.
+
+- Logging with logrus: Develop a robust logging system that logs every significant event, both normal operation and error conditions.
+
+- Real-time updates: Use WebSockets to provide real-time updates to users. For example, you can develop a real-time dashboard that updates statistics without requiring a page reload.
+
+- Search functionality: Implement a feature that allows users to search through your app's content. You can even make this a real-time search feature that updates as the user types.
+
+- User roles and permissions: Implement different roles for users (like admin, user, guest, etc.) and restrict access to certain parts of the application based on these roles.
+
+- Rate limiting: Implement a rate limiter to prevent abuse. This could limit how often a user can call certain API endpoints within a specific period.
+
+- Social Authentication: Allow users to sign in with Google, Facebook, or other social platforms.
+
+- Payment Processing: Integrating with a payment processor like Stripe or PayPal to handle transactions is a common need for many apps.
+
+- Email Notifications: Use Amazon SES to send emails to users. For example, send a welcome email when a user creates a new account, or a confirmation email when a user changes their password.
+
+- File Export: Implement a feature that allows users to export their data, like user profile information or transaction history, as a CSV or PDF.
+
+- Scheduled tasks: Some features may require running background tasks at scheduled intervals, like sending out weekly newsletters, generating reports, or cleaning up old data.
+
+aws:
+
+- Amazon S3 (Simple Storage Service): S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance. You can use S3 to store and retrieve any amount of data at any time, from anywhere on the web. For instance, it's perfect for hosting user uploaded files like profile images or documents. It's also often used for storing backups and log files.
+
+- Amazon SES (Simple Email Service): SES is a cloud-based email sending service designed to help digital marketers and application developers send marketing, notification, and transactional emails. You could use this service to send emails from your application, such as password reset emails, account confirmation emails, or transaction notifications.
+
+Amazon RDS (Relational Database Service): RDS is a managed relational database service that provides you six familiar database engines to choose from, including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. You can use RDS to handle your application's data persistence needs, such as storing user accounts, transaction data, or any other data your application needs to function.
+
+- Amazon ElastiCache: ElastiCache allows you to seamlessly set up, run, and scale popular open-source compatible in-memory data stores in the cloud. You can use ElastiCache with Redis or Memcached to improve the performance of your application by retrieving data from fast, managed, in-memory data stores, instead of relying entirely on slower disk-based databases. You can use this service for caching, session storage, pub/sub messaging, and real-time analytics.
+
+- Amazon EC2 (Elastic Compute Cloud): EC2 provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. EC2's simple web service interface allows you to obtain and configure capacity with minimal friction. You can use EC2 to host your backend Go application.
+
+- AWS Lambda: Lambda lets you run code without provisioning or managing servers. You can run your code for virtually any type of application or backend service, all with zero administration. AWS Lambda executes your code only when needed and scales automatically. You can use this service to handle background tasks, like cleaning up old data or sending emails.
+
+- AWS API Gateway: Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. With a few clicks in the AWS Management Console, you can create REST APIs that act as "front doors" for applications to access data, business logic, or functionality from your backend services. You can use API Gateway to create a RESTful API for your Go backend services.
+
+- AWS CloudWatch: Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. It provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. You can use CloudWatch to collect and track metrics, collect and monitor log files, and respond to system events.
+
+- AWS IAM (Identity and Access Management): IAM enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources. You would use IAM to manage AWS permissions, creating policies that allow your application to use other AWS resources.
+
+- AWS Cognito: Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, and enterprise identity providers via SAML 2.0 and OpenID Connect. You could use this service to handle user authentication and authorization.
