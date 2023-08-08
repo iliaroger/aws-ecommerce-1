@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "E-Commerce App",
-  description: "Next, Go, AWS implementation of an e-commerce app",
+  title: "Next.js 13, Golang and AWS",
+  description: "Displaying features and capabilities of modern technologies",
 };
 
 export default function RootLayout({
@@ -16,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <p>layout</p>
+        {children}
+      </body>
     </html>
   );
 }
